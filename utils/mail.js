@@ -26,12 +26,12 @@ exports.sendSignupMail = (mail) => {
             Body: {
                 Html: {
                     Charset: 'UTF-8',
-                    Data: 'IT IS <strong>WORKING!</strong>'
+                    Data: 'Hi there,<br> Thank you for signup.<br> <strong> Explore different courses and keep learning. </strong><br><br> Thank you'
                 }
             },
             Subject: {
                 Charset: 'UTF-8',
-                Data: 'Node + SES Email'
+                Data: 'Signup successfully.'
             }
         }
     }
