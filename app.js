@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const mongoose = require('mongoose');
 const PORT = process.env.PORT;
 const DB_URL = process.env.MONGO_URL;
@@ -8,6 +9,7 @@ const authRoutes = require('./routes/authRoutes');
 
 
 //middlewares
+app.use(cors());
 app.use(express.json());
 
 // import routes
